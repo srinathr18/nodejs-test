@@ -50,7 +50,7 @@ MongoClient.connect('mongodb://localhost:27017', (err, client) => {
 	// 	console.log("Error", err);
 	// });
 
-// COUNT
+// FOR Each
 	db.collection('Todos').find().forEach((doc) => {
 	 	console.log('Todos');
 	 	console.log(JSON.stringify(doc, undefined, 2));
